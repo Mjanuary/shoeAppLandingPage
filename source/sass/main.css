@@ -6,6 +6,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -425,10 +430,85 @@ hr {
 }
 
 nav {
-  background: red;
+  background: #333333;
+  color: #ffffff;
+  padding: 20px;
+  margin: auto;
+}
+
+nav .nav-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 318px;
+      grid-template-columns: 1fr 318px;
+}
+
+nav h2.logo {
+  margin: 0;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 21px;
+  padding: 13px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+nav section {
+  text-align: right;
+}
+
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid;
 }
 
 .home {
-  background: green;
+  background: #eee;
+  min-height: 60vh;
+}
+
+.header {
+  background: #777777;
+  color: #ffffff;
+}
+
+.header .contents {
+  padding: 150px;
+}
+
+.header h1 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.header a.action {
+  display: block;
+  border: 2px solid #fff;
+  padding: 12px 32px;
+  font-weight: bolder;
+  font-size: 23px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  margin: auto;
+  margin-top: 21px;
+}
+
+footer {
+  background: #333;
+  padding: 30px;
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
